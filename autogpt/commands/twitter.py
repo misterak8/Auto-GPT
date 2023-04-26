@@ -2,8 +2,11 @@
 import os
 
 import tweepy
+from dotenv import load_dotenv
 
 from autogpt.commands.command import command
+
+load_dotenv()
 
 
 @command(

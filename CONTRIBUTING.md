@@ -23,10 +23,12 @@ By participating in this project, you agree to abide by our [Code of Conduct](CO
 ## 📢 A Quick Word
 Right now we will not be accepting any Contributions that add non-essential commands to Auto-GPT.
 
-However, you absolutely can still add these commands to Auto-GPT in the form of plugins.
-Please check out this [template](https://github.com/Significant-Gravitas/Auto-GPT-Plugin-Template).
+However, you absolutely can still add these commands to Auto-GPT in the form of plugins. Please check out this [template](https://github.com/Significant-Gravitas/Auto-GPT-Plugin-Template).
+> ⚠️ Plugin support is expected to ship within the week. You can follow PR #757 for more updates!
 
 ## Getting Started
+
+To start contributing, follow these steps:
 
 1. Fork the repository and clone your fork.
 2. Create a new branch for your changes (use a descriptive name, such as `fix-bug-123` or `add-new-feature`).
@@ -68,21 +70,17 @@ When submitting a pull request, please ensure that your changes meet the followi
 
 ### Code Formatting
 
-We use the `black` and `isort` code formatters to maintain a consistent coding style across the project. Please ensure that your code is formatted properly before submitting a pull request.
-
-To format your code, run the following commands in the project's root directory:
+We use the `black` code formatter to maintain a consistent coding style across the project. Please ensure that your code is formatted using `black` before submitting a pull request. You can install `black` using `pip`:
 
 ```bash
-python -m black .
-python -m isort .
+pip install black
 ```
 
-Or if you have these tools installed globally:
+To format your code, run the following command in the project's root directory:
+
 ```bash
 black .
-isort .
 ```
-
 ### Pre-Commit Hooks
 We use pre-commit hooks to ensure that code formatting and other checks are performed automatically before each commit. To set up pre-commit hooks for this project, follow these steps:
 
@@ -105,5 +103,3 @@ Happy coding, and once again, thank you for your contributions!
 Maintainers will look at PR that have no merge conflicts when deciding what to add to the project. Make sure your PR shows up here:
 
 https://github.com/Significant-Gravitas/Auto-GPT/pulls?q=is%3Apr+is%3Aopen+-is%3Aconflict+
-
-## Testing

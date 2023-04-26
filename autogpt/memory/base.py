@@ -1,8 +1,7 @@
 """Base class for memory providers."""
 import abc
 
-from autogpt.config import Config
-from autogpt.singleton import AbstractSingleton
+from autogpt.config import AbstractSingleton, Config
 
 cfg = Config()
 

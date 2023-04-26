@@ -133,7 +133,6 @@ def execute_shell(command_line: str) -> str:
     # Change back to whatever the prior working dir was
 
     os.chdir(current_dir)
-    return output
 
 
 @command(
